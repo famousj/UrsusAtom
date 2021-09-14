@@ -7,9 +7,9 @@
 
 import Foundation
 
-extension String {
+public extension String {
     
-    internal init<T: BinaryInteger>(_ value: T, radix: Int = 10, chunk: Int, separator: String = ".") {
+    init<T: BinaryInteger>(_ value: T, radix: Int = 10, chunk: Int, separator: String = ".") {
         self = String(String(value, radix: radix).reversed().chunked(by: chunk).joined(separator: separator).reversed())
     }
     

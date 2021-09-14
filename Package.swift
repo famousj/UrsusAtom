@@ -14,6 +14,9 @@ let package = Package(
         .library(
             name: "UrsusAtom",
             targets: ["UrsusAtom"]),
+        .library(
+            name: "UrsusPhoneticBase",
+            targets: ["UrsusPhoneticBase"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.

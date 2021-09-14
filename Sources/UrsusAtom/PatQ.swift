@@ -7,6 +7,7 @@
 
 import Foundation
 import BigInt
+import UrsusPhoneticBase
 
 public struct PatQ: Aura {
     
